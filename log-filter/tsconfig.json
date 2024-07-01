@@ -1,4 +1,6 @@
 {
+  "compilerOptions": {},
+  "include": ["log-filter/src"],
   "files": [],
   "references": [
     {

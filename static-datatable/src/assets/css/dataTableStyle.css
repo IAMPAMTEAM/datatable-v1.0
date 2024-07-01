@@ -1,0 +1,32 @@
+.editable-header,
+.tag-header {
+  background-color: #eee;
+  --ag-header-cell-hover-background-color: #eee;
+}
+.color-red {
+  background-color: #f1c0e8;
+  --ag-header-cell-hover-background-color: #f1c0e8;
+}
+.color-blue {
+  background-color: #70d6ff;
+  --ag-header-cell-hover-background-color: #70d6ff;
+}
+.color-green {
+  background-color: #b9fbc0;
+  --ag-header-cell-hover-background-color: #b9fbc0;
+}
+.color-yellow {
+  background-color: #fbf8cc;
+  --ag-header-cell-hover-background-color: #fbf8cc;
+}
+.ag-header-group-cell {
+  font-size: 17px;
+}
+.ag-header-cell {
+  font-size: 15px;
+}
+.ag-theme-quartz {
+  font-size: 15px;
+  --ag-row-hover-color: #eee;
+  --ag-value-change-value-highlight-background-color: #f3f3f9;
+}
