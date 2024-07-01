@@ -77,7 +77,7 @@ function App() {
 
   return (
     <>
-      <div className="">
+      <div className="m-4">
         <StaticDataTable
           showSaveButton={true}
           datas={mergedTableData}

@@ -79,20 +79,20 @@ export default function StaticDataTable({
           {showSaveButton && (
             <button
               onClick={onBtnSave}
-              className="bg-[#6667AB] font-bold text-white px-2 py-2 rounded-md mr-2"
+              className="bg-[#6667AB] font-medium text-white px-2 py-2 rounded-md mr-2"
             >
               Save
             </button>
           )}
           <button
             onClick={onBtnCSVExport}
-            className="bg-[#6667AB] font-bold text-white px-2 py-2 rounded-md mr-2"
+            className="bg-[#6667AB] font-medium text-white px-2 py-2 rounded-md mr-2"
           >
             Export CSV
           </button>
           <button
             onClick={onBtnExcelExport}
-            className="bg-[#6667AB] font-bold text-white px-2 py-2 rounded-md"
+            className="bg-[#6667AB] font-medium text-white px-2 py-2 rounded-md"
           >
             Export Excel
           </button>
