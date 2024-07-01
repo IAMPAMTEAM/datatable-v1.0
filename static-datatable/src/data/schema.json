@@ -1,0 +1,78 @@
+{
+  "name": "cloudOps-governance",
+  "columnDefs": [
+    { "field": "companyName" },
+    { "field": "awsAccountFullName" },
+    {
+      "headerName": "Governance",
+      "children": [
+        { "field": "governanceName" },
+        { "field": "governanceTypes" },
+        { "field": "complianceAssets" },
+        { "field": "complianceCost" },
+        { "field": "complianceIdentity" },
+        { "field": "complianceAccessControl" },
+        { "field": "complianceEncryption" },
+        { "field": "complianceHA" },
+        { "field": "complianceDR" },
+        { "field": "complianceBackup" },
+        { "field": "complianceLog" }
+      ]
+    }
+  ],
+  "columnWidth": [
+    { "companyName": 165 },
+    { "awsAccountFullName": 250 },
+    { "governanceName": 140 },
+    { "governanceTypes": 140 },
+    { "complianceAssets": 140 },
+    { "complianceCost": 140 },
+    { "complianceIdentity": 140 },
+    { "complianceAccessControl": 165 },
+    { "complianceEncryption": 140 },
+    { "complianceHA": 140 },
+    { "complianceDR": 140 },
+    { "complianceBackup": 140 },
+    { "complianceLog": 140 },
+    { "comment": 180 },
+    { "lastUPdated": 150 }
+  ],
+  "columnMaxWidth": [],
+  "defaultColDef": {
+    "filter": true,
+    "autoHeaderHeight": true,
+    "wrapHeaderText": true
+  },
+  "autoSizeStrategy": {},
+  "editableColumn": [],
+  "tableHeight": 550,
+  "pagination": true,
+  "paginationPageSize": 10,
+  "paginationPageSizeSelector": [10, 20, 50, 100],
+  "columnFontSize": [],
+  "columnFontColor": [],
+  "fontStyles": [],
+  "columnHeaderBackgroundColor": [],
+  "columnBackgroundColor": [],
+  "cellValueColor": [
+    {
+      "type": "Background",
+      "columns": [
+        "complianceAssets",
+        "complianceCost",
+        "complianceIdentity",
+        "complianceAccessControl",
+        "complianceEncryption",
+        "complianceHA",
+        "complianceDR",
+        "complianceBackup",
+        "complianceLog"
+      ],
+      "value": {
+        "High": "rgba(229, 57, 53, 0.2)",
+        "Low": "rgba(71, 153, 107, 0.2)",
+        "Medium": "rgba(251, 246, 101, 0.2)"
+      }
+    }
+  ]
+}

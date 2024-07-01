@@ -18,16 +18,16 @@ function App() {
   useEffect(() => {
     async function fetchData() {
       const { data: tableData } = await axios(
-        "https://iampam-cloudops-tenants-data.s3.ap-northeast-2.amazonaws.com/tenants/330886885966/governance/data.json"
+        "http://localhost:5000/staticData"
       );
       const { data: tableOption } = await axios(
-        "https://iampam-cloudops-tenants-data.s3.ap-northeast-2.amazonaws.com/tenants/330886885966/governance/schema.json"
+        "http://localhost:5000/staticSchema"
       );
       const { data: userTag } = await axios(
-        "https://iampam-cloudops-tenants-data.s3.ap-northeast-2.amazonaws.com/tenants/330886885966/governance/taguser.json"
+        "http://localhost:5000/staticTagUser"
       );
       const { data: awsTag } = await axios(
-        "https://iampam-cloudops-tenants-data.s3.ap-northeast-2.amazonaws.com/tenants/330886885966/governance/tagaws.json"
+        "http://localhost:5000/staticTagAws"
       );
 
       setTableData(tableData);
@@ -60,13 +60,7 @@ function App() {
   const saveEditedRow = async (datas: any[]) => {
     await axios({
       method: "put",
-      url: `${import.meta.env.import.meta.env.VITE_API_KEY}/governance/usertag`,
-      data: datas,
-    });
-
-    await axios({
-      method: "put",
-      url: `${import.meta.env.VITE_API_KEY}/governance/awstag`,
+      url: "http://localhost:5000/staticTagUser",
       data: datas,
     });
   };
